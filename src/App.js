@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import ListOfPlayers from "./components/ListOfPlayers";
+import IndianPlayers from "./components/IndianPlayers";
+import "./App.css";
 
-function App() {
+const App = () => {
+  // Flag state to toggle components - professional usage with state and toggle button
+  const [showListOfPlayers, setShowListOfPlayers] = useState(true);
+
+  const handleToggle = () => {
+    setShowListOfPlayers((prev) => !prev);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-container">
+      <h1>Cricket App</h1>
+      <button onClick={handleToggle} className="toggle-btn">
+        {showListOfPlayers ? "Show Indian Players" : "Show List of Players"}
+      </button>
+
+      <main>
+        {showListOfPlayers ? <ListOfPlayers /> : <IndianPlayers />}
+      </main>
     </div>
   );
-}
+};
 
 export default App;
