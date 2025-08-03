@@ -1,4 +1,5 @@
 body {
+<<<<<<< HEAD
   background: #fcfcfe;
   color: #20315a;
   font-family: 'Segoe UI', Arial, sans-serif;
@@ -177,4 +178,59 @@ select {
 @media (max-width: 600px) {
   .main-container { padding: 9px 2px 12px 2px; }
   .converter-form { flex-direction: column; gap: 2px; align-items: flex-start; }
+=======
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+.app-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+h2 {
+  color: #16a085;
+  margin-top: 1.5rem;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  background-color: #ecf0f1;
+  margin: 6px 0;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.toggle-btn {
+  background-color: #2980b9;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  display: block;
+  width: 100%;
+}
+
+.toggle-btn:hover {
+  background-color: #1c5980;
+>>>>>>> 1f24f5784a6d1ddaea402059843e2650a1965c2f
 }
